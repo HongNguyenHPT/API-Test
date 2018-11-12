@@ -152,7 +152,7 @@
             XmlDocument StServiceCallActivity4_ExpectedOutputProperties_Document = new XmlDocument();
             StServiceCallActivity4_ExpectedOutputProperties_Document.PreserveWhitespace = true;
             StServiceCallActivity4_ExpectedOutputProperties_Document.LoadXml(
-@"<Envelope xmlns=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:p1=""http://www.w3.org/2001/XMLSchema-instance""><Body><GetFlightsResponse xmlns=""HP.SOAQ.SampleApp""><GetFlightsResult><Flight><Airline p1:nil=""true"" /><ArrivalCity p1:nil=""true"" /><ArrivalTime p1:nil=""true"" /><DepartureCity p1:nil=""true"" /><DepartureTime>15113</DepartureTime><FlightNumber /></Flight></GetFlightsResult></GetFlightsResponse></Body></Envelope>");
+@"<Envelope xmlns=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:p1=""http://www.w3.org/2001/XMLSchema-instance""><Body><GetFlightsResponse xmlns=""HP.SOAQ.SampleApp""><GetFlightsResult><Flight><Airline p1:nil=""true"" /><ArrivalCity p1:nil=""true"" /><ArrivalTime p1:nil=""true"" /><DepartureCity p1:nil=""true"" /><DepartureTime>15113</DepartureTime><FlightNumber>15113</FlightNumber></Flight></GetFlightsResult></GetFlightsResponse></Body></Envelope>");
             _flow.StServiceCallActivity4.ExpectedOutputProperties = StServiceCallActivity4_ExpectedOutputProperties_Document;
             XmlDocument StServiceCallActivity4_ExpectedFaultProperties_Document = new XmlDocument();
             StServiceCallActivity4_ExpectedFaultProperties_Document.PreserveWhitespace = true;

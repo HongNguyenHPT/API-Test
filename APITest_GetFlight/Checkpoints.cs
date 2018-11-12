@@ -77,25 +77,16 @@ namespace Script
             activity.AddCheckpointRule(StracturalRule);
 
             // Checkpoint 2
-            IVTDGetter actualValueGetter2 = new VTDXPathGetter(new VTDPropertyInfoBase("OutputEnvelope", "/*[local-name(.)='Envelope'][1]/*[local-name(.)='Body'][1]/*[local-name(.)='GetFlightsResponse'][1]/*[local-name(.)='GetFlightsResult'][1]/*[local-name(.)='Flight'][1]/*[local-name(.)='DepartureTime'][1]"), XmlTypeCode.String, false);
-            IVTDSetter actualValueSetter2 = new VTDCheckpointSetter(XmlTypeCode.String);
+            IVTDGetter actualValueGetter2 = new VTDXPathGetter(new VTDPropertyInfoBase("OutputEnvelope", "/*[local-name(.)='Envelope'][1]/*[local-name(.)='Body'][1]/*[local-name(.)='GetFlightsResponse'][1]/*[local-name(.)='GetFlightsResult'][1]/*[local-name(.)='Flight'][1]/*[local-name(.)='FlightNumber'][1]"), XmlTypeCode.Int, false);
+            IVTDSetter actualValueSetter2 = new VTDCheckpointSetter(XmlTypeCode.Int);
             BindDirection actualBindDirection2 = new BindDirection(_flow.StServiceCallActivity4, actualValueGetter2, actualValueSetter2);
-            CpValObj valueActualObject2 = new CpValObj(actualBindDirection2, XmlTypeCode.String, false);
-            CpValObj valueExpectedObject2 = new CpValObj("15113", XmlTypeCode.String);
-            ValueCPRule cpRule2 = new ValueCPRule(valueActualObject2, valueExpectedObject2, StringCP.EqualTo, "=", false);
-
-            // Checkpoint 3
-            IVTDGetter actualValueGetter3 = new VTDXPathGetter(new VTDPropertyInfoBase("OutputEnvelope", "/*[local-name(.)='Envelope'][1]/*[local-name(.)='Body'][1]/*[local-name(.)='GetFlightsResponse'][1]/*[local-name(.)='GetFlightsResult'][1]/*[local-name(.)='Flight'][1]/*[local-name(.)='FlightNumber'][1]"), XmlTypeCode.Int, false);
-            IVTDSetter actualValueSetter3 = new VTDCheckpointSetter(XmlTypeCode.Int);
-            BindDirection actualBindDirection3 = new BindDirection(_flow.StServiceCallActivity4, actualValueGetter3, actualValueSetter3);
-            CpValObj valueActualObject3 = new CpValObj(actualBindDirection3, XmlTypeCode.Int, false);
-            CpValObj valueExpectedObject3 = new CpValObj("", XmlTypeCode.Int);
-            ValueCPRule cpRule3 = new ValueCPRule(valueActualObject3, valueExpectedObject3, PrimitiveTypeCP.EqualTo, "=", false);
+            CpValObj valueActualObject2 = new CpValObj(actualBindDirection2, XmlTypeCode.Int, false);
+            CpValObj valueExpectedObject2 = new CpValObj("15113", XmlTypeCode.Int);
+            ValueCPRule cpRule2 = new ValueCPRule(valueActualObject2, valueExpectedObject2, PrimitiveTypeCP.EqualTo, "=", false);
 
             ArrayElementCPRule arrayElementCPRule1 = new ArrayElementCPRule();
             ArrayBaseCPRule arrayFixedCpRule1 = new ArrayFixedCPRule("/*[local-name(.)='Envelope'][1]/*[local-name(.)='Body'][1]/*[local-name(.)='GetFlightsResponse'][1]/*[local-name(.)='GetFlightsResult'][1]/*[local-name(.)='Flight']", HandlerType.XML);
             arrayElementCPRule1.AddRule(cpRule2);
-            arrayElementCPRule1.AddRule(cpRule3);
             arrayFixedCpRule1.AddRule(arrayElementCPRule1);
             activity.AddCheckpointRule(arrayFixedCpRule1);
         }
