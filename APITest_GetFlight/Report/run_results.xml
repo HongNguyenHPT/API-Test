@@ -5,12 +5,12 @@
 <Data>
     <Name>Start</Name>
     <Description />
-    <StartTime>2018-11-12 11:54:25</StartTime>
+    <StartTime>2018-11-12 13:41:29</StartTime>
     <Result>Done</Result>
     <Extension>
       <BottomFilePath>Data\Step0.xml</BottomFilePath>
       <HtmlBottomFilePath>.\\\Data\\Step0.js</HtmlBottomFilePath>
-      <IconKey>718d3f4d90554939b05fbace57126339</IconKey>
+      <IconKey>0f577e4e74f04527991f71c52147644a</IconKey>
     </Extension>
   </Data>
 </ReportNode>
@@ -21,12 +21,12 @@
 <Data>
     <Name>GetFlights</Name>
     <Description />
-    <StartTime>2018-11-12 11:54:25</StartTime>
-    <Result>Failed</Result>
+    <StartTime>2018-11-12 13:41:29</StartTime>
+    <Result>Passed</Result>
     <Extension>
       <BottomFilePath>Data\Step2.xml</BottomFilePath>
       <HtmlBottomFilePath>.\\\Data\\Step2.js</HtmlBottomFilePath>
-      <IconKey>718d3f4d90554939b05fbace57126339</IconKey>
+      <IconKey>0f577e4e74f04527991f71c52147644a</IconKey>
       <MergedSTCheckpointData>
         <BottomFilePath>Data\Step1.xml</BottomFilePath>
         <HtmlBottomFilePath>.\\\Data\\Step1.js</HtmlBottomFilePath>
@@ -37,13 +37,13 @@
 <Data>
     <Name>Iteration 1</Name>
     <Description />
-    <StartTime>2018-11-12 11:54:25</StartTime>
+    <StartTime>2018-11-12 13:41:29</StartTime>
     <Duration>0</Duration>
-    <Result>Failed</Result>
+    <Result>Passed</Result>
     <Extension>
       <BottomFilePath>Data\Step3.xml</BottomFilePath>
       <HtmlBottomFilePath>.\\\Data\\Step3.js</HtmlBottomFilePath>
-      <IconKey>974dbc13e64843148ef5b34c1b4e1033</IconKey>
+      <IconKey>403503dff3bf42d593e041c73516b452</IconKey>
     </Extension>
     <TestedApplications />
   </Data>
@@ -51,27 +51,27 @@
 <Data>
     <Name />
     <Description />
-    <StartTime>2018-11-12 11:54:25</StartTime>
+    <StartTime>2018-11-12 13:41:29</StartTime>
     <Duration>0</Duration>
-    <Result>Failed</Result>
+    <Result>Passed</Result>
     <InputParameters />
     <Extension>
       <BottomFilePath>Data\Step3.xml</BottomFilePath>
       <HtmlBottomFilePath>.\\\Data\\Step3.js</HtmlBottomFilePath>
-      <IconKey>25ad789c8f5649159ff9061c1e8d1b27</IconKey>
+      <IconKey>52bf2d06c40f4d2db125a0b74ba9b2f8</IconKey>
     </Extension>
   </Data>
 </ReportNode>
 <Data>
     <Name>Test Flow</Name>
     <Description />
-    <StartTime>2018-11-12 11:54:25</StartTime>
+    <StartTime>2018-11-12 13:41:29</StartTime>
     <Duration>0</Duration>
-    <Result>Failed</Result>
+    <Result>Passed</Result>
     <Extension>
       <BottomFilePath>Data\Step4.xml</BottomFilePath>
       <HtmlBottomFilePath>.\\\Data\\Step4.js</HtmlBottomFilePath>
-      <IconKey>718d3f4d90554939b05fbace57126339</IconKey>
+      <IconKey>0f577e4e74f04527991f71c52147644a</IconKey>
     </Extension>
   </Data>
 </ReportNode>
@@ -79,12 +79,12 @@
 <Data>
     <Name>End</Name>
     <Description />
-    <StartTime>2018-11-12 11:54:25</StartTime>
+    <StartTime>2018-11-12 13:41:29</StartTime>
     <Result>Done</Result>
     <Extension>
       <BottomFilePath>Data\Step5.xml</BottomFilePath>
       <HtmlBottomFilePath>.\\\Data\\Step5.js</HtmlBottomFilePath>
-      <IconKey>718d3f4d90554939b05fbace57126339</IconKey>
+      <IconKey>0f577e4e74f04527991f71c52147644a</IconKey>
     </Extension>
   </Data>
 </ReportNode>
@@ -93,12 +93,12 @@
     <ToolName>HP Unified Functional Testing</ToolName>
     <ToolVersion>14.0</ToolVersion>
     <Description />
-    <StartTime>2018-11-12 11:54:25</StartTime>
+    <StartTime>2018-11-12 13:41:29</StartTime>
     <Duration>0</Duration>
-    <Result>Failed</Result>
+    <Result>Passed</Result>
     <InputParameters />
     <Extension>
-      <IconKey>74c0b7b3e1bb479b98b550310942f329</IconKey>
+      <IconKey>3e3edcd242474825b362b35ae308e7f6</IconKey>
       <IsPlainTextNodeName>True</IsPlainTextNodeName>
     </Extension>
     <Environment>
@@ -119,7 +119,7 @@
 </ReportNode>
 <GeneralInfo>
     <ResultName />
-    <RunStartTime>2018-11-12 11:54:25</RunStartTime>
+    <RunStartTime>2018-11-12 13:41:29</RunStartTime>
     <Timezone>+07:00:00</Timezone>
     <OrchestrationToolName>HP Unified Functional Testing</OrchestrationToolName>
     <OrchestrationToolVersion>14.0</OrchestrationToolVersion>
